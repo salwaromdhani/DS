@@ -109,4 +109,4 @@ Fichiers manquants	mauvais push	vérifier git add .
 🔗 GitHub Actions : https://docs.github.com/actions
 🔗 GitHub Pages : https://pages.github.com
 🔗 Marketplace Actions : https://github.com/marketplace
-🔗 YAML : https://yaml.org
+🔗 YAML : https://yaml.orgtrigger deploy
