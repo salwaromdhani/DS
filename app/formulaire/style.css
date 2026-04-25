@@ -1,0 +1,83 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Arial',sans-serif;background:#f0f2f5;color:#1d2c38}
+.header{background:white;padding:15px 0;box-shadow:0 2px 4px rgba(0,0,0,0.1)}
+.header-container{width:90%; max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center}
+.header a{margin-left:20px; text-decoration:none; color:#1d2c38; font-weight:500}
+.header a:hover{color:#007bff}
+.logo{font-size:1.5rem; font-weight:bold}
+
+.form-container{max-width:500px;margin:80px auto 40px auto;padding:30px;background:white;border-radius:10px;box-shadow:0 4px 15px rgba(0,0,0,0.1)}
+.form-container h1{text-align:center;margin-bottom:10px}
+.subtitle{text-align:center;margin-bottom:20px;color:#555}
+
+.input-group{margin-bottom:15px;display:flex;flex-direction:column}
+.input-group label{margin-bottom:5px;font-weight:500}
+.input-group input, .input-group select{padding:10px;border:1px solid #ccc;border-radius:5px;font-size:1rem;transition:border-color 0.3s}
+.input-group input:focus, .input-group select:focus{border-color:#007bff;outline:none}
+
+.checkbox-group, .radio-group{margin-bottom:15px}
+.checkbox-group label, .radio-group label{font-size:0.95rem;color:#333; margin-right:10px}
+
+.btn-submit, .btn-reset{width:48%; padding:12px; border:none; border-radius:5px; font-size:1rem; cursor:pointer; margin-top:10px}
+.btn-submit{background:#007bff; color:white; margin-right:4%}
+.btn-submit:hover{background:#0056b3}
+.btn-reset{background:#dc3545; color:white}
+.btn-reset:hover{background:#a71d2a}
+
+#formMessage{margin-top:15px;font-weight:bold;text-align:center}
+input.valid{border-color:green}
+input.invalid{border-color:red}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-group label, .radio-group label {
+  display: inline-block;
+  margin-right: 10px;
+}
+.btn-submit, .btn-reset {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.btn-submit {
+  background-color: #31be8b;
+  color: white;
+}
+.btn-reset {
+  background-color: #ccc;
+  color: #333;
+}
+.error-msg {
+  color: #b00020;
+  font-size: 13px;
+  margin-top: 3px;
+  display: block;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 30px; /* espace pour l'icône */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+footer{text-align:center;padding:20px 0;background:#333;color:white;margin-top:40px}
+
+@media(max-width:600px){.form-container{margin:60px 20px;padding:20px}.btn-submit,.btn-reset{width:100%; margin:5px 0}}

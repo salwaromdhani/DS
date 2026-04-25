@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription - AI Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo"> <img src="../assets/images/AI.png" alt="AI Shop Logo"></div>
+      <nav class="nav">
+        <a href="../index.html">Accueil</a>
+        <a href="formulaire/inscription.html">Inscription</a>
+        <a href="../produits/catalogue.html">Produits</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="form-container">
+      <h1 id="titreForm">Créer un compte</h1>
+      <p class="subtitle">Remplissez le formulaire pour vous inscrire</p>
+
+        <!-- Nom -->
+        <div class="input-group">
+          <label for="nom">Nom *</label>
+          <input type="text" id="nom" placeholder="Votre nom" required>
+          <span class="error-msg" id="nomError"></span>
+        </div>
+
+        <!-- Prénom -->
+        <div class="input-group">
+          <label for="prenom">Prénom *</label>
+          <input type="text" id="prenom" placeholder="Votre prénom" required>
+          <span class="error-msg" id="prenomError"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="exemple@email.com" required>
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <!-- Nom utilisateur -->
+        <div class="input-group">
+          <label for="username">Nom d'utilisateur *</label>
+          <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+          <span class="error-msg" id="usernameError"></span>
+        </div>
+
+        <!-- Mot de passe -->
+        <div class="input-group">
+          <label for="password">Mot de passe *</label>
+          <div class="password-container">
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+          </div>
+          <span class="error-msg" id="passwordError"></span>
+        </div>
+
+        <!-- Confirmer mot de passe -->
+        <div class="input-group">
+          <label for="confirmPassword">Confirmer le mot de passe *</label>
+          <div class="password-container">
+            <input type="password" id="confirmPassword" placeholder="Confirmez le mot de passe" required>
+            <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</span>
+          </div>
+          <span class="error-msg" id="confirmPasswordError"></span>
+        </div>
+
+
+        <!-- Newsletter -->
+        <div class="input-group checkbox-group">
+          <label><input type="checkbox" id="newsletter"> Newsletter</label>
+          <label><input type="checkbox" id="promo"> Offres promotionnelles</label>
+        </div>
+
+        <!-- Genre -->
+        <div class="input-group radio-group">
+          <p>Genre :</p>
+          <label><input type="radio" name="genre" value="H"> Homme</label>
+          <label><input type="radio" name="genre" value="F"> Femme</label>
+          <span class="error-msg" id="genreError"></span>
+        </div>
+
+        <!-- Pays et ville -->
+        <div class="input-group">
+          <label>Pays :</label>
+          <select name="pays" id="C18">
+            <option value="tunisie">Tunisie</option>
+            <option value="algerie">Algérie</option>
+            <option value="maroc">Maroc</option>
+          </select>
+          <br>
+          <label for="lab_region">choisir votre région</label>
+          <select name="region" id="C19">
+            <optgroup label="tunisie">
+              <option value="tunis">Tunis</option>
+              <option value="bizerte">Bizerte</option>
+            </optgroup>
+            <optgroup label="algérie">
+              <option value="alger">Alger</option>
+              <option value="oran">Oran</option>
+            </optgroup>
+          </select>
+          <span class="error-msg" id="villeError"></span>
+        </div>
+
+        <!-- Acceptation -->
+        <div class="input-group checkbox-group">
+          <label><input type="checkbox" id="accept" required> J'accepte les conditions générales *</label>
+          <span class="error-msg" id="acceptError"></span>
+        </div>
+
+        <button type="submit" class="btn-submit">S'inscrire</button>
+        <button type="reset" class="btn-reset">Réinitialiser</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>Email : contact@aishop.com | WhatsApp : +216 00 000 000</p>
+      <p>© 2025 AI Shop - Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
