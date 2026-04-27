@@ -1,8 +1,10 @@
-version: '3.8'
-
 services:
   web:
     build: .
     ports:
-      - "3000:80"
-    restart: always
+      - "8080:80"
+
+  logs:
+    image: httpd:alpine
+    ports:
+      - "9000:80"
